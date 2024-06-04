@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 import 'dart:io';
 import 'package:whatsapp_status_editor/whatsapp_status_editor.dart';
 
@@ -76,7 +75,7 @@ class _SatusyEditorPackageState extends State<StatusEditorPackage> {
                         await Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const StoryTextEditor(),
+                            builder: (context) => const StatusEditor(),
                           ),
                         ).then((res) async {
                           print(res);

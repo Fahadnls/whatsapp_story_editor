@@ -45,17 +45,14 @@ class FooterToolsWidget extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: onDone,
-              style: ButtonStyle(
-                shape: MaterialStateProperty.all(
-                  const RoundedRectangleBorder(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  shadowColor: Colors.white,
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(
                       Radius.circular(18),
                     ),
-                  ),
-                ),
-                shadowColor: MaterialStateProperty.all(Colors.white),
-                backgroundColor: MaterialStateProperty.all(Colors.white),
-              ),
+                  )),
               child: isLoading
                   ? const CupertinoActivityIndicator()
                   : doneButtonChild ??

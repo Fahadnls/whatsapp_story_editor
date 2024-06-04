@@ -1,6 +1,6 @@
 name: whatsapp_status_editor
 description: "This package is created in the style of the WhatsApp text editor,"
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/Fahadnls/whatsapp_story_editor
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^5.1.0
+  google_fonts: ^6.2.0
   path_provider: ^2.1.3
 
 

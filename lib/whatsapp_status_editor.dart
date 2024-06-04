@@ -20,8 +20,8 @@ import 'story_editor/constants/item_type.dart';
 import 'story_editor/extensions/context_extension.dart';
 import 'story_editor/models/editable_items.dart';
 
-class StoryTextEditor extends StatefulWidget {
-  const StoryTextEditor({
+class StatusEditor extends StatefulWidget {
+  const StatusEditor({
     super.key,
     this.animationsDuration = const Duration(milliseconds: 300),
     this.doneButtonChild,
@@ -31,10 +31,10 @@ class StoryTextEditor extends StatefulWidget {
   final Widget? doneButtonChild;
 
   @override
-  _StoryMakerState createState() => _StoryMakerState();
+  _StatusEditorState createState() => _StatusEditorState();
 }
 
-class _StoryMakerState extends State<StoryTextEditor> {
+class _StatusEditorState extends State<StatusEditor> {
 // A global key used to get the context of the widget tree.
   GlobalKey previewContainer = GlobalKey();
 
