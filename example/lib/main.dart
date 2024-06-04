@@ -1,5 +1,3 @@
-import 'package:example/strory_maker/extensions/context_extension.dart';
-import 'package:example/strory_maker/story_text_maker.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:io';
@@ -74,19 +72,19 @@ class _StoryEditorPackageState extends State<StoryEditorPackage> {
                           style:
                               TextStyle(fontSize: 16.0, color: Colors.white)),
                       onPressed: () async {
-                        await Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const StoryTextEditor(),
-                          ),
-                        ).then((res) async {
-                          print(res);
-                          if (res != null) {
-                            print(res);
-                            filePath = res;
-                            setState(() {});
-                          }
-                        });
+                        // await Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (context) => const StoryTextEditor(),
+                        //   ),
+                        // ).then((res) async {
+                        //   print(res);
+                        //   if (res != null) {
+                        //     print(res);
+                        //     filePath = res;
+                        //     setState(() {});
+                        //   }
+                        // });
                       },
                     ),
                   ),
@@ -98,8 +96,8 @@ class _StoryEditorPackageState extends State<StoryEditorPackage> {
               if (filePath.path != '')
                 Center(
                   child: SizedBox(
-                    width: context.width * .7,
-                    height: context.width * .7,
+                    width: 250,
+                    height: 250,
                     child: Image.file(
                       File(
                         filePath.path,
