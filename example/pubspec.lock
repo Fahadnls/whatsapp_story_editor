@@ -296,6 +296,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.2"
+  whatsapp_status_editor:
+    dependency: "direct main"
+    description:
+      name: whatsapp_status_editor
+      sha256: "33ad68d5409768ff9486a43d2a46855a5e68e858b94e4412ec0031de4429c978"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   win32:
     dependency: transitive
     description:

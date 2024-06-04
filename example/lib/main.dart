@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:io';
+import 'package:whatsapp_status_editor/whatsapp_status_editor.dart';
 
 void main() {
   runApp(const MyApp());
@@ -72,19 +73,19 @@ class _StoryEditorPackageState extends State<StoryEditorPackage> {
                           style:
                               TextStyle(fontSize: 16.0, color: Colors.white)),
                       onPressed: () async {
-                        // await Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const StoryTextEditor(),
-                        //   ),
-                        // ).then((res) async {
-                        //   print(res);
-                        //   if (res != null) {
-                        //     print(res);
-                        //     filePath = res;
-                        //     setState(() {});
-                        //   }
-                        // });
+                        await Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const StoryTextEditor(),
+                          ),
+                        ).then((res) async {
+                          print(res);
+                          if (res != null) {
+                            print(res);
+                            filePath = res;
+                            setState(() {});
+                          }
+                        });
                       },
                     ),
                   ),
