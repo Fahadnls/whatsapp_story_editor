@@ -18,20 +18,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const StoryEditorPackage(),
+      home: const StatusEditorPackage(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class StoryEditorPackage extends StatefulWidget {
-  const StoryEditorPackage({super.key});
+class StatusEditorPackage extends StatefulWidget {
+  const StatusEditorPackage({super.key});
 
   @override
-  State<StoryEditorPackage> createState() => _StoryEditorPackageState();
+  State<StatusEditorPackage> createState() => _SatusyEditorPackageState();
 }
 
-class _StoryEditorPackageState extends State<StoryEditorPackage> {
+class _SatusyEditorPackageState extends State<StatusEditorPackage> {
   bool isThumbnail = true;
   File filePath = File("");
 
@@ -97,13 +97,12 @@ class _StoryEditorPackageState extends State<StoryEditorPackage> {
               if (filePath.path != '')
                 Center(
                   child: SizedBox(
-                    width: 250,
-                    height: 250,
+                    width: 300,
+                    height: 300,
                     child: Image.file(
                       File(
                         filePath.path,
                       ),
-                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
