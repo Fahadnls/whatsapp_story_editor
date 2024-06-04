@@ -1,37 +1,42 @@
 ## Installation
 
-Add `whatsapp_story_editor:` to your **pubspec.yaml** dependencies then run `flutter pub get`
+Add `whatsapp_status_editor:` to your **pubspec.yaml** dependencies then run `flutter pub get`
 
 ```
  dependencies:
-  whatsapp_story_editor:
+  whatsapp_status_editor:
 ```
 
 ## Import
 
 Add this line to import the package.
 ```
-import 'package:whatsapp_story_editor/whatsapp_story_editor.dart';
+import 'package:whatsapp_status_editor/whatsapp_status_editor.dart';
+
 ```
 
 
 ## How to use
 
 ```dart
- await Navigator.push(
-    context,
-       MaterialPageRoute(
-        builder: (context) => const StoryTextEditor(),
-        ),).then((res) async {
-            print(res);
-             if (res != null) {
-               print(res);
-               filePath = res;
-               setState(() {});
-             }
-               });
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const StatusEditor(),
+      ),
+    ).then((res) async {
+      print(res);
+      if (res != null) {
+        print(res);
+        filePath = res;
+        setState(() {});
+      }
+    });
 ```
 
+## Preview
+
+<img src="https://raw.githubusercontent.com/Fahadnls/whatsapp_story_editor/main/presentation/Screenshot_1717503839.png" alt="drawing" height="500"/>
 
 
 ## Support me
