@@ -1,6 +1,6 @@
 name: whatsapp_status_editor
 description: "This package is created in the style of the WhatsApp text editor,"
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/Fahadnls/whatsapp_story_editor
 
 environment:

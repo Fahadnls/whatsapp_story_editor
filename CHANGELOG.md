@@ -7,3 +7,7 @@
 ## 0.0.3
 
 * google font update & bug fixed
+
+## 0.0.4
+
+* Update & bug fixed

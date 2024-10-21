@@ -426,12 +426,12 @@ class _StatusEditorState extends State<StatusEditor> {
   /// This method is called when the user selects a new font family from the font family picker.
   /// It updates the [_selectedFontFamily] with the new font family.
   /// The [index] parameter is the index of the selected font family in the [fontFamilyList] list.
-  void _onFamilyChange(index) {
-    HapticFeedback.lightImpact();
-    setState(() {
-      _selectedFontFamily = index;
-    });
-  }
+  // void _onFamilyChange(index) {
+  //   HapticFeedback.lightImpact();
+  //   setState(() {
+  //     _selectedFontFamily = index;
+  //   });
+  // }
 
   /// Toggles the background gradient picker.
   ///
@@ -661,13 +661,13 @@ class _StatusEditorState extends State<StatusEditor> {
   /// This method is called when the user selects a new font style from the style picker.
   /// It updates the [_selectedFontFamily] with the new style and jumps the [_familyPageController] to the selected page.
   /// The [index] parameter is the index of the selected style in the [fontFamilyList] list.
-  void _onStyleChange(int index) {
-    HapticFeedback.lightImpact();
-    setState(() {
-      _selectedFontFamily = index;
-    });
-    _familyPageController.jumpToPage(index);
-  }
+  // void _onStyleChange(int index) {
+  //   HapticFeedback.lightImpact();
+  //   setState(() {
+  //     _selectedFontFamily = index;
+  //   });
+  //   _familyPageController.jumpToPage(index);
+  // }
 
   /// Handles the change of text color.
   ///
